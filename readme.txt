@@ -9,6 +9,8 @@
 -If possible, each client and sku should have description of the items.
 -If possible, there should be a visual representation of the completed quantities (status bar, etc.)
 -The app should be able to handle items that were not initially planned on the breakdown and present the completed quatities. 
+- There should eb a way to select the SKU that was completed and provide quatr
+-
 
 -- Weekly breakdown --
 
@@ -32,4 +34,4 @@ Upon selecting the desired week, of the registered client producing that week sh
 |           |   SKU1        |   1213            |   1213            |   0               |
 | Client 2  |   SKU2        |   ----            |   2000            |   -1213           |
 |           |   SKU3        |   900             |   900             |   0               |
-|           |   SKU4        |   2658            |   3000            |   -342            |
+|           |   SKU4        |   2658            |   3000            |   -342            | 
