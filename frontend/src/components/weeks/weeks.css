@@ -1,0 +1,18 @@
+/* Weeks.css */
+.list-unstyled {
+    list-style: none;
+  }
+  
+li {
+    margin-bottom: 10px;
+    /* Add default styles for li elements */
+    color: black; /* Default text color */
+    transition: color 0.2s, text-decoration 0.2s; /* Smooth transition */
+    list-style: none;
+}
+
+li:hover {
+    /* Add styles for li elements on hover */
+    color: blue; /* Blue text color on hover */
+    text-decoration: underline; /* Underline text on hover */
+}
