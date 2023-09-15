@@ -1,0 +1,23 @@
+.home{
+    max-width: 200px;
+    background-color: white;
+    text-decoration: none;
+}
+
+.home a{
+    display: inline-block; /* Make 'a' tags block elements */
+    margin-bottom: 10px;
+    margin-left: 10px;
+    color: black; /* Default text color */
+    background-color: white;
+    transition: color 0.2s, text-decoration 0.2s; /* Smooth transition */
+    text-decoration: none; /* Remove default underline from links */
+  
+    /* Styling for the dates */
+    border: 1px solid #ccc; /* Add a border */
+    border-radius: 3px;
+    padding: 4px 8px; /* Add some spacing around the text (top and bottom: 4px, left and right: 8px) */
+    font-weight: bold; /* Make the text bold */
+    max-width: 150px;
+    
+}

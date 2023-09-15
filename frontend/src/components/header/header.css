@@ -1,4 +1,13 @@
+a{
+    min-width: 100%;
+    padding-left: 0;
+    background-color: #006eb8;
+    text-decoration: none;
+}
+
 h1{
     background-color: #006eb8;
     color: white;
+    padding-left: 10px;
+    width: 100%;
 }

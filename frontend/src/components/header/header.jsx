@@ -2,7 +2,7 @@ import './header.css'
 
 function Header(){
     return(
-        <h1 className="header">Production Forecast</h1>
+        <a href='/'><h1>Production Forecast</h1></a>
     )
 }
 
