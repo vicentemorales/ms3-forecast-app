@@ -2,7 +2,7 @@ import './header.css'
 
 function Header(){
     return(
-        <a href='/'><h1>Production Forecast</h1></a>
+        <a href='/'><h1>"Company Name"</h1></a>
     )
 }
 

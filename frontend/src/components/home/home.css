@@ -1,12 +1,13 @@
 .home{
-    max-width: 200px;
+    max-width: 250px;
     background-color: white;
     text-decoration: none;
 }
 
 .home a{
     display: inline-block; /* Make 'a' tags block elements */
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
     margin-left: 10px;
     color: black; /* Default text color */
     background-color: white;
@@ -20,4 +21,9 @@
     font-weight: bold; /* Make the text bold */
     max-width: 150px;
     
+}
+
+hr{
+    margin-left: 10px;
+    min-width: 260px;
 }
