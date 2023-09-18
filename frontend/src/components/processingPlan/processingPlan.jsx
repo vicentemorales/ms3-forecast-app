@@ -41,6 +41,19 @@ function ProcessingPlan() {
         });
     }, []);
 
+    
+    // Function to determine background color
+    const getBackgroundColor = (skuName, index) => {
+        // Check if the current SKU has the same name as the previous SKU
+        if (index > 0 && skus[index - 1].sku_name === skuName) {
+          // Use the same background color as the previous SKU
+          return index % 2 === 0 ? 'background-white' : 'background-gray';
+        } else {
+          // Start a new background color
+          return index % 2 === 0 ? 'background-white' : 'background-gray';
+        }
+      };
+
   return (
     <div className="ProcessingPlan">
       <h2>Client Names</h2>
@@ -57,9 +70,10 @@ function ProcessingPlan() {
                 {/* Map through the SKUs and generate a div for each SKU that belongs to the current client */}
                 {skus
                   .filter((sku) => sku.client_id === client.client_id)
+                  .sort((a, b) => a.sku_name.localeCompare(b.sku_name))
                   .map((sku) => (
                     <div key={sku.sku_id} className="sku-name">
-                      {sku.sku_name} |
+                      <em>{sku.sku_name} </em>
                       <em> <strong>{sku.sku_size}</strong></em>
                     </div>
                   ))}
