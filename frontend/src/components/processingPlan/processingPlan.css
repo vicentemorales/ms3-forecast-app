@@ -1,0 +1,46 @@
+.ProcessingPlan{
+    padding-left: 10px;
+}
+
+.client-list{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    margin-left: 10px;
+
+}
+
+.client-sku-container{
+    display: flex;
+    padding-right: 10px;
+    margin-bottom: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+.client-name{
+    background-color: #ccc;
+    padding-right: 10px;
+    padding-left: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sku-name-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sku-name{
+    border: 1px solid;
+    border-radius: 5px;
+    margin: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
