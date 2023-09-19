@@ -35,3 +35,18 @@ Upon selecting the desired week, of the registered client producing that week sh
 | Client 2  |   SKU2        |   ----            |   2000            |   -1213           |
 |           |   SKU3        |   900             |   900             |   0               |
 |           |   SKU4        |   2658            |   3000            |   -342            | 
+
+
+---- 9/19/23 changes update ----
+
+The overall concept remains the same but changes to the design have been made. 
+- Instead of a list of customer and quantities:
+    - Clients will be listed in individual divs.
+    - Under the clients name a list of pending items will be present
+    - To the right of the client names/pending items  there will  be a div that contains tile for each of the skus.
+        - The tiles will display every sku (even the ones that are not oending and will serve as "buttons")
+    - As a sku tile is pressed, the visitor will be presented with a form that where they will be able to submit a quant produced.
+
+- After submitting a quanitity, the submission should be logged.
+    - this logged submission should show the client, item description, quantity, notes, and name of person who produced it.
+        -this log should be editable/deletable incase errors are made during the submission phase
