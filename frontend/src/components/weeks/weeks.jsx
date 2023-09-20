@@ -3,7 +3,7 @@ import axios from 'axios';
 import './weeks.css';
 import { Link } from 'react-router-dom'; // Import the Link component for routing
 
-function Weeks() {
+function Weeks({ setSelectedWeek }) {
   // State to hold the week data fetched from the backend
   const [weekData, setWeekData] = useState([]);
 
@@ -49,7 +49,13 @@ function Weeks() {
             {groupedWeeks[year].map((week) => (
               <li key={week.primary_id} className='sunday-date' style={{maxWidth: '150px'}}>
                 {/* Use the Link component to create individual links with dynamic URLs */}
-                <Link to={`/weeks/${week.primary_id}`} style={{maxWidth: '150px'}}>wk of {week.week}</Link>
+                <Link
+                  to={`/weeks/${week.primary_id}`}
+                  style={{maxWidth: '150px'}}
+                  onClick={() => setSelectedWeek(week.primary_id)} // Set the selectedWeek when clicking the link
+                >
+                  wk of {week.week}
+                </Link>
               </li>
             ))}
           </ul>

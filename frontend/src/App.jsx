@@ -4,6 +4,7 @@ import Header from './components/header/header';
 import Home from './components/home/home';
 import Weeks from './components/weeks/weeks';
 import ProcessingPlan from './components/processingPlan/processingPlan'; // Import the ProcessingPlan component
+import ProcessingSubmission from './components/processingSubmission/processingSubmission';
 
 function App() {
   // State to hold the selected week's data
@@ -18,6 +19,7 @@ function App() {
           <Route exact path='/weeks' element={<Weeks setSelectedWeek={setSelectedWeek} />} />
           {/* Pass selectedWeek to ProcessingPlan component */}
           <Route path='/weeks/:weekId' element={<ProcessingPlan selectedWeek={selectedWeek} />} />
+          <Route path='/weeks/:weekId/:skuId/processing-submission' element={<ProcessingSubmission selectedWeek={selectedWeek} />} />
         </Routes>
       </BrowserRouter>
     </div>

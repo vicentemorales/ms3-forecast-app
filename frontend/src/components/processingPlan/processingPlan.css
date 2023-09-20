@@ -47,9 +47,11 @@
     box-sizing: border-box;
     text-align: center;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
   }
   
   .background-white {
@@ -59,4 +61,15 @@
   .background-gray {
     background-color: #ccc;
   }
+  
+  .sku-link {
+    max-width: 150px; /* Adjust the width as needed */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Add ellipsis (...) for overflowed text */
+    background: white;
+    text-decoration: none;
+    color: inherit;
+  }
+
+
   

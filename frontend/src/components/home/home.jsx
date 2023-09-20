@@ -6,15 +6,15 @@ import { Link } from 'react-router-dom';
 function Home(){
     return(
         <div className='home'>
-        <Link to="/weeks">Processing Weekly Forecasts</Link>
+        <Link to="/weeks">Production - <br></br>Processing Weekly Forecasts</Link>
         <hr />
-        <Link to="/" style={{background: '#ccc'}}>Production Weekly Forecast</Link>
+        <Link to="/" style={{background: '#ccc'}}> Copacking - <br></br>Production Weekly Forecast</Link>
         <hr />
-        <Link to="/">Inventory</Link>
+        <Link to="/">Inventory - <br></br>Inventory for Produced Items</Link>
         <hr />
-        <Link to="/" style={{background: '#ccc'}}>Shipping and Receiving</Link>
+        <Link to="/" style={{background: '#ccc'}}>Shipping and Receiving - <br></br>Visual Schedule App</Link>
         <hr />
-        <Link to="/">QA Documention</Link>
+        <Link to="/">QA Documention - <br></br>QA Form Record Keeping</Link>
         </div>
     )
 }
