@@ -50,3 +50,6 @@ The overall concept remains the same but changes to the design have been made.
 - After submitting a quanitity, the submission should be logged.
     - this logged submission should show the client, item description, quantity, notes, and name of person who produced it.
         -this log should be editable/deletable incase errors are made during the submission phase
+
+
+9.24.23 The only item left is the submission log and possibly a status bar. As of now each items is displaying thier own pending numbers. 
