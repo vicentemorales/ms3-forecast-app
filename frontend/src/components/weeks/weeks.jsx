@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './weeks.css';
-import { Link } from 'react-router-dom'; // Import the Link component for routing
+import { Link } from 'react-router-dom';
 
 function Weeks({ setSelectedWeek }) {
   // State to hold the week data fetched from the backend
